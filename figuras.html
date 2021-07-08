@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>Figuras geometricas | Curso practico de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>FIGURAS GEOMETRICAS</h1>
+        <p>Este es el primer taller del curso practico de JavaScript</p>
+    </header>
+    <section class="calc_container">
+        <div class="calc_element">
+            <h2>CUADRADO</h2>
+            <img src="./img/cuadrado.svg" alt="">
+            <form action="">
+                <label for="inputCuadrado">Introduce el lado de tu cuadrado</label>
+                <input id="inputCuadrado" type="number" placeholder="lado" >
+                <div class="calc_element-button">
+                    <button type="button" onclick="calcularPerimeroCuadrado()">
+                        Calcular Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular Área
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="calc_element">
+            <h2>TRIANGULO</h2>
+            <img src="./img/trinagulo.svg" alt="">
+            <form action="">
+                <label for="inputTriangulo">Introduce el lado de tu tringulo equilatero</label>
+                <input id="inputTriangulo" type="number" placeholder="lado">
+                <div class="calc_element-button">
+                    <button type="button"  onclick="calcularPerimetroTriangulo()">
+                        Calcular Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular Área
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="calc_element">
+            <h2>CIRCULO</h2>
+            <img src="./img/circulo.svg" alt="">
+            <form action="">
+                <label for="inputCirculo">Introduce el radio de tu circulo</label>
+                <input id="inputCirculo" type="number" placeholder="radio">
+                <div class="calc_element-button">
+                    <button type="button" onclick="calcularDiametroCirculo()">
+                        Calcular Diametro
+                    </button>
+                    <button type="button" onclick="calcularCircunferenciaCirculo()">
+                        Calcular Circunferencia
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular Área
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+   
+    <div class="resultado">
+        <h2>RESULTADO</h2>
+    </div>
+    <script src="./figuras.js"></script>
+
+    <footer>
+        <h3>Desarollado por:</h3>
+        <p>CARLOS COLMENARES</p>
+    </footer>
+</body>
+</html>

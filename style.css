@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: ps5;
+    src: url('./PlayGreatBold-8MgEZ.ttf');
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Play', sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+header h1{
+    font-family: 'ps5', sans-serif;
+    font-size: 4rem;
+}
+
+header p{
+    font-size: 2rem;
+}
+
+.calc_container{
+    display: flex;
+    justify-content: center;
+}
+
+.calc_container h2{
+    font-family: 'ps5', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.calc_container img{
+    margin-bottom: 15px;
+}
+
+.calc_element{
+    margin: 25px 50px;
+    text-align: center;
+    width: 370px;
+    box-shadow: 0px 0px 10px black;
+    padding: 15px  15px;
+    border-radius: 10px;
+}
+
+.calc_element form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.calc_element-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.calc_element input{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+}
+
+.calc_element-button button{
+    width: 100px;
+    height: 45px;
+    margin: 3px;
+    border: none;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+.resultado{
+    text-align: center;
+    height: 150px;
+}
+
+.resultado h2{
+    font-family: 'ps5', sans-serif;
+    font-size: 3rem;
+}
+
+.resultado h3{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+footer p{
+    font-family: 'ps5', sans-serif;
+    font-size: 2rem;
+}
