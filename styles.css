@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #000000 0%, #004bd6 100%);
+    color: white;
+    height: 100vh;
+    text-align: center;
+}
+
+header{
+    height: 20vh;
+    text-align: center;
+    padding: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+}
