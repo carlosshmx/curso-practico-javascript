@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style_descuentos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/pocentaje.png"/>
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Calcula descuento</title>
 </head>
 <body>
     <header>
@@ -12,22 +18,33 @@
         <p>Este es el segundo taller del curso practico de JavaScript</p>
     </header>
 
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+    <main>
+        <section class="calculator_container">
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+    
+            <form action="">
+                <label for="inputPrice">Escribe el precio de tu producto</label>
+                <input type="number" id="inputPrice" placeholder="Precio">
+                <label for="inputDiscount">Escribe el descuento a aplicar</label>
+                <input type="number" id="inputDiscount" placeholder="% de descuento">
+    
+                <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
+            
+                <div class="resultPrice_container">
+                    <P>El precio con descuento es:</P>
+                    <h2 id="resultPrice"></h2>
+                </div>
+            
+            </form>
+    
+        </section>
+    </main>
 
-        <form action="">
-            <label for="inputPrice">Escribe el precio de tu producto</label>
-            <input type="number" id="inputPrice">
-            <label for="inputDiscount">Escribe el descuento a aplicar</label>
-            <input type="number" id="inputDiscount">
-
-            <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
-        
-            <p id="resultPrice"></p>
-        
-        </form>
-
-    </section>
+    <footer>
+        <p>Desarollado por</p>
+        <h2>Carlos Colmenares</h2>
+    </footer>
     
 
     <script src="./descuentos.js"></script>
