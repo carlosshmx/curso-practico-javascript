@@ -1,0 +1,61 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body header {
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #6495ff;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+
+body .data-control-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+body .data-control-container .buttons {
+  margin-top: 20px;
+}
+
+body .display {
+  margin-top: 20px;
+  text-align: center;
+}
+
+body .display .result-container {
+  height: 28px;
+}
+
+body button {
+  width: 130px;
+  height: 28px;
+  border: none;
+  border-radius: 10px;
+  background-color: #8bb0ff;
+}
+
+body input {
+  height: 28px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #eeeeee;
+  padding-left: 10px;
+}
+
+body select {
+  height: 28px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #eeeeee;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=proyecto.css.map */

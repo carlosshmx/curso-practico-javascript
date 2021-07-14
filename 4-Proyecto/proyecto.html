@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./proyecto.css">
+    <title>Proyecto</title>
+</head>
+<body>
+    <script src="./proyecto.js"></script>
+    <header>
+        <h1>Calculo de ingresos</h1>
+        <p>Ingrese el monto correspondiente a cada mes de cada año</p>
+    </header>
+    
+    <section class="data-control-container">
+        <span>$</span>
+        <input type="number" id="moneyIn" placeholder="Ingreso">
+        <select name="month" id="month">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+        <select name="year" id="year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <button id="botonGuardar" onclick="agregar()">Agregar</button>
+        <div class="buttons">
+            <button id="botonTotal" onclick="crearTotal()">Total ingresado</button>
+            <button id="botonPromedio" onclick="crearPromedio()">Promedio mensual</button>
+            <button id="botonMediana" onclick="mediana()">Mediana de ingesos</button>
+        </div>
+    </section>
+
+    <section class="display">
+        <div class="result-container">
+            <h3 id="result-text"></h3>
+        </div>
+    
+        <div class="list-container"></div>
+    </section>
+</body>
+</html>
